@@ -1,0 +1,42 @@
+<f:render partial="formErrors" arguments="{formName: 'newParty'}" />
+<f:form class="tx-dual-form" method="post" controller="Party" action="createOrganization" name="party">
+<fieldset class="csc-mailform">
+
+	<div class="csc-mailform-field">
+	<label for="partyName">Name</label>
+	<f:form.textbox id="partyName" name="party[partyNames][0][nameElements][0][value]" size="18" /><br />
+	<label for="partyNameType">Type</label>
+	<f:form.select id="partyNameType" name="party[partyNames][0][nameElements][0][type]" options="{partyNameTypes}" optionLabelField="value"><select><option>dummy</option></select></f:form.select>
+	</div>
+
+	<div class="csc-mailform-field">
+	<label for="thoroughfare">Thoroughfare</label>
+	<f:form.textbox id="thoroughfare" name="party[addresses][0][thoroughfare][nameElements][0][value]" size="18" />
+	</div>
+
+	<div class="csc-mailform-field">
+	<label for="title">No.</label>
+	<f:form.textbox id="thoroughfare" name="party[addresses][0][thoroughfare][nameElements][1][value]" size="4" />
+	</div>
+
+	<div class="csc-mailform-field">
+	<label for="title">ZIP</label>
+	<f:form.textbox id="postCode" name="party[addresses][0][postCode]" size="6" />
+	</div>
+
+	<div class="csc-mailform-field">
+	<label for="locality">Locality</label>
+	<f:form.textbox id="locality" name="party[addresses][0][locality][nameElements][0][value]" size="18" />
+	</div>
+
+	<div class="csc-mailform-field">
+	<label for="country">Type</label>
+	<f:form.select id="country" name="party[addresses][0][country]" options="{countryNames}" optionLabelField="value"><select><option>dummy</option></select></f:form.select>
+	</div>
+
+	<div class="csc-mailform-field">
+	<label>&nbsp;</label>
+	<f:form.submit value="Save"/>
+	</div>
+</fieldset>
+</f:form>

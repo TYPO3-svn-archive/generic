@@ -1,0 +1,27 @@
+{namespace g=Tx_Generic_ViewHelpers}
+
+<f:section name="default">
+{party.name}
+</f:section>
+
+<f:section name="nameOnly">
+{party.name}
+</f:section>
+
+<f:section name="nameAndAddress">
+{party.name}<br />
+{party.address->g:format.address()}
+</f:section>
+
+<f:section name="fullContact">
+<div class="vcard" typeof="foaf:Person" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<span class="fn" property="foaf:name">{party.name}</span><br />
+<div class="adr">{party.address->g:format.address()}</div>
+<f:for each="{party.contactNumbers}" as="contactNumber">
+<div class="tel"><f:if condition="{contactNumber.communicationMediaType}"><span class="type">{contactNumber.communicationMediaType}</span>:&nbsp;</f:if><span class="value" property="foaf:phone">{contactNumber}</span></div>
+</f:for>
+<f:for each="{party.electronicAddressIdentifiers}" as="electronicAddressIdentifier">
+<div class="email"><f:if condition="{electronicAddressIdentifier.type}"><span class="type">{electronicAddressIdentifier.type}</span>:&nbsp;</f:if><span class="value" property="foaf:mbox">{electronicAddressIdentifier}</span></div>
+</f:for>
+</div>
+</f:section>

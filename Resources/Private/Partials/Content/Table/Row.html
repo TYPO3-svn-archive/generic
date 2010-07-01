@@ -1,0 +1,9 @@
+{namespace g=Tx_Generic_ViewHelpers}
+
+<f:section name="default">
+	<tr>
+		<f:for each="{content}" as="cell">
+		{cell->g:format.content(as: 'Content/Table/Cell')}		
+		</f:for>
+	</tr>
+</f:section>

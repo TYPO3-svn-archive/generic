@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Ontext Sensitive Help (CSH) for table tx_generic_domain_model_organizationinfo</description>
+        <type>CSH</type>
+        <csh_table>tx_generic_domain_model_organizationinfo</csh_table>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+			<label index="type.description">Type of organisation. Free text description, e.g. Company, Trust, Bank, Society, Club, etc.</label>
+			<label index="category_type.description">Type of category the organisation belongs to such as club, association, company, vendor, etc</label>
+			<label index="status.description">Status of the entity. e.g. Old, Current, Inactive, Active, etc</label>
+			<label index="nature.description">Nature of the organisation. e.g. Public limited, Commercial, charity, non-commercial, etc.</label>
+			<label index="industry_type.description">Organisation Industry type such as IT, Manufacturing.</label>
+			<label index="industry_code.description">Industry code or classification</label>
+			<label index="industry_code_type.description">Type of code used for industry code</label>
+			<label index="number_of_employees.description">Free text description of organisation size in terms of number of employees</label>
+			<label index="operating_hour_start_time.description">Operating hour start time of the organisation, e.g. 9:00am</label>
+			<label index="operating_hour_end_time.description">Operating hour end time for the organisation. e.g. 5:00pm</label>
+		</languageKey>
+    </data>
+</T3locallang>

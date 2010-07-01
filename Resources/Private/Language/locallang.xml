@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Generic Domain Models extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_generic_domain_model_party">An party (could be an organization or person)</label>
+			<label index="tx_generic_domain_model_party.free_text_lines">A text description of the party</label>
+			<label index="tx_generic_domain_model_party.addresses">addresses</label>
+			<label index="tx_generic_domain_model_party.electronic_address_identifiers">electronicAddressIdentifiers</label>
+			<label index="tx_generic_domain_model_party.contact_numbers">contactNumbers</label>
+			<label index="tx_generic_domain_model_address">An address</label>
+			<label index="tx_generic_domain_model_address.free_text_address">Container for free text address elements</label>
+			<label index="tx_generic_domain_model_address.country">Country details</label>
+			<label index="tx_generic_domain_model_address.administrative_area">Details of the top-level area division in the country, such as state, district, province, island, region, etc. Note that some countries do not have this</label>
+			<label index="tx_generic_domain_model_address.sub_administrative_area">The next level down division of the area. E.g. state / county, province / reservation. Note that not all countries have a subadministrative area</label>
+			<label index="tx_generic_domain_model_address.locality">Details of Locality which is a named densely populated area  (a place) such as town, village, suburb, etc. A locality composes of many individual addresses.  Many localities exist in an administrative area or a sub adminisrative area. A locality can also have sub localities. For example, a municipality locality can have many villages associated with it which are sub localities. Example: Tamil Nadu State, Erode District, Bhavani Taluk, Paruvachi Village is a valid address in India. Tamil Nadu is the Administrative Area, Erode is the sub admin area, Bhavani is the locality, and Paruvachi is the sub locality</label>
+			<label index="tx_generic_domain_model_address.thoroughfare">Details of the Access route along which buildings/lot/land are located, such as street, road, channel, crescent, avenue, etc. This also includes canals/banks on which houses/boat houses are located where people live</label>
+			<label index="tx_generic_domain_model_address.premises">Details of the Premises (could be building(s), site, loaction, property, premise, place) which is a landmark place which has a main address such as large mail user (e.g. Airport, Hospital, University) or could be a building (e.g. apartment, house)  or a building or complex of buildings (e.g. an apartment complex or shopping centre) or even a vacant land (e.g. LOT). A premises can have many sub-addresses such as apartments in a building having its own addresses or buildings within an airport having its own addresses including its own thoroughfares</label>
+			<label index="tx_generic_domain_model_address.post_code">A container for a single free text or structured postcode. Note that not all countries have post codes</label>
+			<label index="tx_generic_domain_model_address.rural_delivery">A container for postal-specific delivery identifier for remote communities. Note that not all countries have RuralDelivery</label>
+			<label index="tx_generic_domain_model_address.postal_delivery_point">Final mail delivery point where the mail is dropped off for recipients to pick them up directly. E.g. POBox, Private Bag,  pigeon hole, free mail numbers, etc.</label>
+			<label index="tx_generic_domain_model_address.post_office">A delivery point/installation where all mails are delivered and the post man/delivery service picks up the mails and delivers it to the recipients through a delivery mode. Examples are a rural post office where post is delivered, a post office containing post office boxes/personal mail boxes. Note that not all countries have PostOffice. Can be used to represent overseas military addresses also along with PostalDeliveryPoint element</label>
+			<label index="tx_generic_domain_model_address.type">Defines the type of address. An address type can be" Primary Address, Secondary Address, Rural Address, Military Address, etc.</label>
+			<label index="tx_generic_domain_model_address.address_id">A unique address identifier such as postal delivery idetifier assigned to the address by local postal authority, e.g. DPID in Australia</label>
+			<label index="tx_generic_domain_model_address.address_id_type">Type of address ID used. e.g. DPID, etc.</label>
+			<label index="tx_generic_domain_model_address.tx_generic_usage">The purpose the address is used for. E.g.  Postal, residential, business,  exchange, update, create, delete, etc</label>
+			<label index="tx_generic_domain_model_address.delivery_mode">Mode of delivery of address. For example: rural route, normal delivery, post office box, etc.</label>
+			<label index="tx_generic_domain_model_address.status">Status of the entity. e.g. Old, Current, Inactive, Active, etc.</label>
+			<label index="tx_generic_domain_model_locality">Details of Locality which is a named densely populated area  (a place) such as town, village, suburb, etc. A locality composes of many individual addresses.  Many localities exist in an administrative area or a sub adminisrative area. A locality can also have sub localities. For example, a municipality locality can have many villages associated with it which are sub localities. Example: Tamil Nadu State, Erode District, Bhavani Taluk, Paruvachi Village is a valid address in India. Tamil Nadu is the Administrative Area, Erode is the sub admin area, Bhavani is the locality, and Paruvachi is the sub locality</label>
+			<label index="tx_generic_domain_model_locality.locality_type">Type of locality. e.g. suburb, area, zone, village, etc.</label>
+			<label index="tx_generic_domain_model_locality.name">Data associated with the locality. e.g. Full name of the locality or part of it, reference location to the locality</label>
+			<label index="tx_generic_domain_model_locality.sub_locality">subLocality</label>
+			<label index="tx_generic_domain_model_thoroughfare">Details of the Access route along which buildings/lot/land are located, such as street, road, channel, crescent, avenue, etc. This also includes canals/banks on which houses/boat houses are located where people live</label>
+			<label index="tx_generic_domain_model_thoroughfare.thoroughfare_type">thoroughfareType</label>
+			<label index="tx_generic_domain_model_thoroughfare.name">Data associated with the thoroughfare details. e.g. Full thoroughfare name or part of it, type of thoroughfare, old name, new name, reference data in support of the thoroughfare</label>
+			<label index="tx_generic_domain_model_thoroughfare.sub_thoroughfare">subThoroughfare</label>
+			<label index="tx_generic_domain_model_nameelement">NameElement</label>
+			<label index="tx_generic_domain_model_nameelement.value">The name value</label>
+			<label index="tx_generic_domain_model_nameelement.type">Semantics of data associated with name.</label>
+			<label index="tx_generic_domain_model_nameelement.abbrevation">abbrevation</label>
+			<label index="tx_generic_domain_model_name">Party Name</label>
+			<label index="tx_generic_domain_model_name.name_elements">nameElements</label>
+			<label index="tx_generic_domain_model_name.sub_division_name">subDivisionName</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier">ElectronicAddressIdentifyer</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.value">value</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.type">Type of electronic address identifier</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.status">Status of the entity. e.g. Old, Current, Inactive, Active, etc</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.tx_generic_usage">Usage of electronic address identifier. e.g. business, personal</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.tx_generic_label">An electronic address identifier is usually stored (and probably exchanged) in conjunction with a label which is typically displayed and the URL/electronic identifier just links that label.</label>
+			<label index="tx_generic_domain_model_contactnumber">ContactNumber</label>
+			<label index="tx_generic_domain_model_contactnumber.value">TODO This should be represented as list of ContactNumberElement</label>
+			<label index="tx_generic_domain_model_contactnumber.communication_media_type">Free text explanation of the communication line type. e.g. telephone, land line, mobile, fax, pager, etc</label>
+			<label index="tx_generic_domain_model_contactnumber.status">Current Status of Contact Number.  e.g. Old, Current, Inactive, Active, etc</label>
+			<label index="tx_generic_domain_model_contactnumber.tx_generic_usage">Nature of contact. Example: business, personal, free call, toll free, after hours, etc</label>
+			<label index="tx_generic_domain_model_contactnumber.contact_hours">Free text expression of contact hours. e.g. 9:00AM-5:00PM</label>
+			<label index="tx_generic_domain_model_organizationinfo">OrganizationInfo</label>
+			<label index="tx_generic_domain_model_organizationinfo.type">Type of organisation. Free text description, e.g. Company, Trust, Bank, Society, Club, etc.</label>
+			<label index="tx_generic_domain_model_organizationinfo.category_type">Type of category the organisation belongs to such as club, association, company, vendor, etc</label>
+			<label index="tx_generic_domain_model_organizationinfo.status">Status of the entity. e.g. Old, Current, Inactive, Active, etc</label>
+			<label index="tx_generic_domain_model_organizationinfo.nature">Nature of the organisation. e.g. Public limited, Commercial, charity, non-commercial, etc.</label>
+			<label index="tx_generic_domain_model_organizationinfo.industry_type">Organisation Industry type such as IT, Manufacturing.</label>
+			<label index="tx_generic_domain_model_organizationinfo.industry_code">Industry code or classification</label>
+			<label index="tx_generic_domain_model_organizationinfo.industry_code_type">Type of code used for industry code</label>
+			<label index="tx_generic_domain_model_organizationinfo.number_of_employees">Free text description of organisation size in terms of number of employees</label>
+			<label index="tx_generic_domain_model_organizationinfo.operating_hour_start_time">Operating hour start time of the organisation, e.g. 9:00am</label>
+			<label index="tx_generic_domain_model_organizationinfo.operating_hour_end_time">Operating hour end time for the organisation. e.g. 5:00pm</label>
+			<label index="tx_generic_domain_model_organization">A container for defining the unique characteristics of an organisation only</label>
+			<label index="tx_generic_domain_model_organization.organization_info">organizationInfo</label>
+			<label index="tx_generic_domain_model_organization.organization_names">organizationNames</label>
+			<label index="tx_generic_domain_model_personinfo">PersonInfo</label>
+			<label index="tx_generic_domain_model_personinfo.age">Age of the person as integer</label>
+			<label index="tx_generic_domain_model_personinfo.category_type">Type of category the person belongs such as customer, employee, friend, prospect, etc</label>
+			<label index="tx_generic_domain_model_personinfo.physical_status">Status of the person. e.g. living, deceased, retired. To log the date of the status such as death or retired, use "Events" element</label>
+			<label index="tx_generic_domain_model_personinfo.marital_status">Free text description of the current marital status, e.g. married, separated, divorced, separated, etc.</label>
+			<label index="tx_generic_domain_model_personinfo.ethnicity">Ethnicity of the person, e.g. Asian, Chinese, African, etc.</label>
+			<label index="tx_generic_domain_model_personinfo.gender">Free text gender description.</label>
+			<label index="tx_generic_domain_model_personinfo.religion">Free text name of the religion</label>
+			<label index="tx_generic_domain_model_person">A container for defining the unique characteristics of a person only</label>
+			<label index="tx_generic_domain_model_person.person_info">personInfo</label>
+			<label index="tx_generic_domain_model_person.birth_info">birthInfo</label>
+			<label index="tx_generic_domain_model_person.person_names">personNames</label>
+			<label index="tx_generic_domain_model_birthinfo">BirthInfo</label>
+			<label index="tx_generic_domain_model_birthinfo.birth_date_time">Birth data and time to the known precision. Usually, it is only the date that is known. Leave time as 00:00:00 if not known.</label>
+			<label index="tx_generic_domain_model_birthinfo.birth_date_time_precision">Specify the duration of the uncertainity period as a range where BirthDateTime is in the middle of the range. Uses xsd:duration as the data type. The time interval is in the format: PnYnMnDTnHnMnS P: period (required), nY: number of years, nM: number of months, nD: number of days, T: start of a time section (required if hours, minutes or secords to be specified), nH: number of hours, nM: number of minutes, nS: number of seconds  P5Y -> period of 5 years P5Y2M10D -> 5 years, 2 months, 10 days, and 15 hours</label>
+			<label index="tx_generic_domain_model_birthinfo.birth_place_details">birthPlaceDetails</label>
+		</languageKey>
+	</data>
+</T3locallang>

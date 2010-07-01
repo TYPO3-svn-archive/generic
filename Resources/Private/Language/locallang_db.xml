@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'generic'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_generic_domain_model_party">Party</label>
+			<label index="tx_generic_domain_model_party.tx_extbase_type">Class</label>
+			<label index="tx_generic_domain_model_party.tx_extbase_type.0">undefined</label>
+			<label index="tx_generic_domain_model_party.tx_extbase_type.Tx_Generic_Domain_Model_Organization">Organization</label>
+			<label index="tx_generic_domain_model_party.tx_extbase_type.Tx_Generic_Domain_Model_Person">Person</label>
+			<label index="tx_generic_domain_model_party.party_names">Party Names</label>
+			<label index="tx_generic_domain_model_party.free_text_lines">Free Text Lines</label>
+			<label index="tx_generic_domain_model_party.addresses">Addresses</label>
+			<label index="tx_generic_domain_model_party.electronic_address_identifiers">Electronic Address Identifiers</label>
+			<label index="tx_generic_domain_model_party.contact_numbers">Contact Numbers</label>
+			<label index="tx_generic_domain_model_address">Address</label>
+			<label index="tx_generic_domain_model_address.free_text_address">Free Text Address</label>
+			<label index="tx_generic_domain_model_address.country">Country</label>
+			<label index="tx_generic_domain_model_address.administrative_area">Administrative Area</label>
+			<label index="tx_generic_domain_model_address.sub_administrative_area">Sub Administrative Area</label>
+			<label index="tx_generic_domain_model_address.locality">Locality</label>
+			<label index="tx_generic_domain_model_address.thoroughfare">Thoroughfare</label>
+			<label index="tx_generic_domain_model_address.premises">Premises</label>
+			<label index="tx_generic_domain_model_address.post_code">Post Code</label>
+			<label index="tx_generic_domain_model_address.rural_delivery">Rural Delivery</label>
+			<label index="tx_generic_domain_model_address.postal_delivery_point">Postal Delivery Point</label>
+			<label index="tx_generic_domain_model_address.post_office">Post Office</label>
+			<label index="tx_generic_domain_model_address.type">Type</label>
+			<label index="tx_generic_domain_model_address.address_id">Address Id</label>
+			<label index="tx_generic_domain_model_address.address_id_type">Address Id Type</label>
+			<label index="tx_generic_domain_model_address.tx_generic_usage">Usage</label>
+			<label index="tx_generic_domain_model_address.delivery_mode">Delivery Mode</label>
+			<label index="tx_generic_domain_model_address.status">Status</label>
+			<label index="tx_generic_domain_model_nameelement">Name Element</label>
+			<label index="tx_generic_domain_model_nameelement.value">Value</label>
+			<label index="tx_generic_domain_model_nameelement.type">Type</label>
+			<label index="tx_generic_domain_model_nameelement.abbrevation">Abbrevation</label>
+			<label index="tx_generic_domain_model_name">Party Name</label>
+			<label index="tx_generic_domain_model_name.tx_extbase_type">Class</label>
+			<label index="tx_generic_domain_model_name.tx_extbase_type.0">undefined</label>
+			<label index="tx_generic_domain_model_name.tx_extbase_type.Tx_Generic_Domain_Model_OrganizationName">Organization Name</label>
+			<label index="tx_generic_domain_model_name.tx_extbase_type.Tx_Generic_Domain_Model_PersonName">Person Name</label>
+			<label index="tx_generic_domain_model_name.tx_extbase_type.Tx_Generic_Domain_Model_Locality">Locality</label>
+			<label index="tx_generic_domain_model_name.tx_extbase_type.Tx_Generic_Domain_Model_Thoroughfare">Thoroughfare</label>
+			<label index="tx_generic_domain_model_name.type">Type</label>
+			<label index="tx_generic_domain_model_party.name_elements">Name Elements</label>
+			<label index="tx_generic_domain_model_name.sub_name">Sub Name</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier">Electronic Address Identifyer</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.value">Value</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.type">Type</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.status">Status</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.tx_generic_usage">Usage</label>
+			<label index="tx_generic_domain_model_electronicaddressidentifier.tx_generic_label">Label</label>
+			<label index="tx_generic_domain_model_contactnumber">Contact Number</label>
+			<label index="tx_generic_domain_model_contactnumber.value">Value</label>
+			<label index="tx_generic_domain_model_contactnumber.communication_media_type">Communication Media Type</label>
+			<label index="tx_generic_domain_model_contactnumber.status">Status</label>
+			<label index="tx_generic_domain_model_contactnumber.tx_generic_usage">Usage</label>
+			<label index="tx_generic_domain_model_contactnumber.contact_hours">Contact Hours</label>
+			<label index="tx_generic_domain_model_organizationinfo">Organization Info</label>
+			<label index="tx_generic_domain_model_organizationinfo.type">Type</label>
+			<label index="tx_generic_domain_model_organizationinfo.category_type">Category Type</label>
+			<label index="tx_generic_domain_model_organizationinfo.status">Status</label>
+			<label index="tx_generic_domain_model_organizationinfo.nature">Nature</label>
+			<label index="tx_generic_domain_model_organizationinfo.industry_type">Industry Type</label>
+			<label index="tx_generic_domain_model_organizationinfo.industry_code">Industry Code</label>
+			<label index="tx_generic_domain_model_organizationinfo.industry_code_type">Industry Code Type</label>
+			<label index="tx_generic_domain_model_organizationinfo.number_of_employees">Number Of Employees</label>
+			<label index="tx_generic_domain_model_organizationinfo.operating_hour_start_time">Operating Hour Start Time</label>
+			<label index="tx_generic_domain_model_organizationinfo.operating_hour_end_time">Operating Hour End Time</label>
+			<label index="tx_generic_domain_model_organization">Organization</label>
+			<label index="tx_generic_domain_model_organization.organization_info">Organization Info</label>
+			<label index="tx_generic_domain_model_organization.organization_names">Organization Names</label>
+			<label index="tx_generic_domain_model_personinfo">Person Info</label>
+			<label index="tx_generic_domain_model_personinfo.age">Age</label>
+			<label index="tx_generic_domain_model_personinfo.category_type">Category Type</label>
+			<label index="tx_generic_domain_model_personinfo.physical_status">Physical Status</label>
+			<label index="tx_generic_domain_model_personinfo.marital_status">Marital Status</label>
+			<label index="tx_generic_domain_model_personinfo.ethnicity">Ethnicity</label>
+			<label index="tx_generic_domain_model_personinfo.gender">Gender</label>
+			<label index="tx_generic_domain_model_personinfo.gender.m">Male</label>
+			<label index="tx_generic_domain_model_personinfo.gender.f">Female</label>
+			<label index="tx_generic_domain_model_personinfo.religion">Religion</label>
+			<label index="tx_generic_domain_model_person">Person</label>
+			<label index="tx_generic_domain_model_person.person_info">Person Info</label>
+			<label index="tx_generic_domain_model_person.birth_info">Birth Info</label>
+			<label index="tx_generic_domain_model_person.person_names">Person Names</label>
+			<label index="tx_generic_domain_model_birthinfo">Birth Info</label>
+			<label index="tx_generic_domain_model_birthinfo.birth_date_time">Birth Date Time</label>
+			<label index="tx_generic_domain_model_birthinfo.birth_date_time_precision">Birth Date Time Precision</label>
+			<label index="tx_generic_domain_model_birthinfo.birth_place_details">Birth Place Details</label>
+			<label index="tx_generic_domain_model_value">Term (Usage, Type, Status)</label>
+			<label index="tx_generic_domain_model_value.key">Key</label>
+			<label index="tx_generic_domain_model_value.value">Term</label>
+			<label index="tx_generic_domain_model_value.type">Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Status_AddressStatus">Address Status</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Status_ContactNumberStatus">Contact Number Status</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Status_ElectronicAddressIdentifierStatus">Electronic Address Identifier Status</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_AddressType">Address Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_LocalityType">Locality Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_LocalityNameElementType">Locality Name Element Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_ThoroughfareType">Thoroughfare Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_ThoroughfareNameElementType">Thoroughfare Name Element Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_CommunicationMediaType">Communication Media Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_ElectronicAddressIdentifierType">Electronic Address Identifier Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_OrganizationNameElementType">Organization Name Element Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_OrganizationNameType">Organization Name Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_PersonNameType">Person Name Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_PersonNameElementType">Person Name Element Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Type_SubDivisionType">Sub Division Type</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Usage_AddressUsage">Address Usage</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Usage_ContactNumberUsage">Contact Number Usage</label>
+			<label index="tx_generic_domain_model_value.type.Tx_Generic_Domain_Model_Usage_ElectronicAddressIdentifierUsage">Electronic Address Identifier Usage</label>
+		</languageKey>
+	</data>
+</T3locallang>
+
+

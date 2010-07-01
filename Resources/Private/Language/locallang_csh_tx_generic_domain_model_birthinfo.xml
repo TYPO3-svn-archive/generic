@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Ontext Sensitive Help (CSH) for table tx_generic_domain_model_birthinfo</description>
+        <type>CSH</type>
+        <csh_table>tx_generic_domain_model_birthinfo</csh_table>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+			<label index="birth_date_time.description">Birth data and time to the known precision. Usually, it is only the date that is known. Leave time as 00:00:00 if not known.</label>
+			<label index="birth_date_time_precision.description">Specify the duration of the uncertainity period as a range where BirthDateTime is in the middle of the range. Uses xsd:duration as the data type. The time interval is in the format: PnYnMnDTnHnMnS P: period (required), nY: number of years, nM: number of months, nD: number of days, T: start of a time section (required if hours, minutes or secords to be specified), nH: number of hours, nM: number of minutes, nS: number of seconds  P5Y -> period of 5 years P5Y2M10D -> 5 years, 2 months, 10 days, and 15 hours</label>
+			<label index="birth_place_details.description">birthPlaceDetails</label>
+		</languageKey>
+    </data>
+</T3locallang>

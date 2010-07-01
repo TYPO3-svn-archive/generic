@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Ontext Sensitive Help (CSH) for table tx_generic_domain_model_personinfo</description>
+        <type>CSH</type>
+        <csh_table>tx_generic_domain_model_personinfo</csh_table>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+			<label index="age.description">Age of the person as integer</label>
+			<label index="category_type.description">Type of category the person belongs such as customer, employee, friend, prospect, etc</label>
+			<label index="physical_status.description">Status of the person. e.g. living, deceased, retired. To log the date of the status such as death or retired, use "Events" element</label>
+			<label index="marital_status.description">Free text description of the current marital status, e.g. married, separated, divorced, separated, etc.</label>
+			<label index="ethnicity.description">Ethnicity of the person, e.g. Asian, Chinese, African, etc.</label>
+			<label index="gender.description">Free text gender description.</label>
+			<label index="religion.description">Free text name of the religion</label>
+		</languageKey>
+    </data>
+</T3locallang>

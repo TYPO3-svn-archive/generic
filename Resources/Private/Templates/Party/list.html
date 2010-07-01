@@ -1,0 +1,19 @@
+<table class="contenttable" border="0" cellspacing="5" cellpadding="5">
+	<tr>
+		<td valign="top">Name</td>
+		<td valign="top">City</td>
+		<td valign="top">ZIP</td>
+	</tr>
+	<f:for each="{parties}" as="party">
+	<tr>
+		<td valign="top"><f:link.action action="show" controller="Party" arguments="{party: party}">{party.name}</f:link.action></td>
+		<td valign="top">{party.address.locality}</td>
+		<td valign="top">{party.address.postCode}</td>
+	</tr>
+	</f:for>
+</table>
+
+<p>
+	<f:link.action action="newOrganization">Add a new organization</f:link.action><br />
+	<f:link.action action="newPerson">Add a new person</f:link.action>
+</p>

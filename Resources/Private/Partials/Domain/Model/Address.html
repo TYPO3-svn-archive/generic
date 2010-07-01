@@ -1,0 +1,17 @@
+<f:section name="default">
+<span class="street">{content.thoroughfare}</span><br />
+<span class="postal-code">{content.postCode}</span>&nbsp;<span class="locality">{content.locality}</span><br />
+<span class="country-name">{content.country}</span>
+</f:section>
+
+<f:section name="DEU">
+<span class="street">{content.thoroughfare}</span><br />
+<span class="postal-code">{content.postCode}</span>&nbsp;<span class="locality">{content.locality}</span><br />
+<span class="country-name">{content.country}</span>
+</f:section>
+
+<f:section name="USA">
+<span class="street">{content.thoroughfare}</span><br />
+<span class="locality">{content.locality}<f:if condition="{content.administrativeArea}">,&nbsp;{content.administrativeArea.key}</f:if><br />
+<span class="country-name">{content.country}</span>&nbsp;<span class="postal-code">{content.postCode}</span>
+</f:section>

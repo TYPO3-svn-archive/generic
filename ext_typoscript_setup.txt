@@ -1,0 +1,145 @@
+config.tx_extbase {
+	persistence{
+		classes {
+			# Tx_Generic_Domain_Model_Value.mapping.columns {
+			# 	# tx_generic_key.mapOnProperty = key
+			# }
+			Tx_Generic_Domain_Model_CountryName {
+				mapping {
+					tableName = static_countries
+					columns {
+						cn_iso_3.mapOnProperty = key
+						cn_short_en.mapOnProperty = value
+					}
+				}
+			}
+			Tx_Generic_Domain_Model_AdministrativeAreaName {
+				mapping {
+					tableName = static_country_zones
+					columns {
+						zn_code.mapOnProperty = key
+						zn_name_local.mapOnProperty = value
+					}
+				}
+			}
+			Tx_Generic_Domain_Model_Name {
+				mapping	{
+					recordType = Tx_Generic_Domain_Model_Name
+				}
+				subclasses {
+					Tx_Generic_Domain_Model_OrganizationName = Tx_Generic_Domain_Model_OrganizationName
+					Tx_Generic_Domain_Model_PersonName = Tx_Generic_Domain_Model_PersonName
+					Tx_Generic_Domain_Model_Thoroughfare = Tx_Generic_Domain_Model_Thoroughfare
+					Tx_Generic_Domain_Model_Locality = Tx_Generic_Domain_Model_Locality
+				}
+			}
+			Tx_Generic_Domain_Model_Party {
+				mapping	{
+					recordType = Tx_Generic_Domain_Model_Party
+				}
+				subclasses {
+					Tx_Generic_Domain_Model_Organization = Tx_Generic_Domain_Model_Organization
+					Tx_Generic_Domain_Model_Person = Tx_Generic_Domain_Model_Person
+				}
+			}
+			Tx_Generic_Domain_Model_Organization {
+				mapping	{
+					tableName = tx_generic_domain_model_party
+					recordType = Tx_Generic_Domain_Model_Organization
+				}
+			}
+			Tx_Generic_Domain_Model_Person {
+				mapping	{
+					tableName = tx_generic_domain_model_person
+					recordType = Tx_Generic_Domain_Model_Person
+				}
+			}
+			Tx_Generic_Domain_Model_OrganizationName.mapping.tableName = tx_generic_domain_model_name
+			Tx_Generic_Domain_Model_PersonName.mapping.tableName = tx_generic_domain_model_name
+			Tx_Generic_Domain_Model_Thoroughfare.mapping.tableName = tx_generic_domain_model_name
+			Tx_Generic_Domain_Model_Locality.mapping.tableName = tx_generic_domain_model_name
+			
+			Tx_Generic_Domain_Model_OrganizationName.mapping.recordType = Tx_Generic_Domain_Model_OrganizationName
+			Tx_Generic_Domain_Model_PersonName.mapping.recordType = Tx_Generic_Domain_Model_PersonName
+			Tx_Generic_Domain_Model_Thoroughfare.mapping.recordType = Tx_Generic_Domain_Model_Thoroughfare
+			Tx_Generic_Domain_Model_Locality.mapping.recordType = Tx_Generic_Domain_Model_Locality
+
+			Tx_Generic_Domain_Model_Value {
+				subclasses {
+					Tx_Generic_Domain_Model_Status_AddressStatus = Tx_Generic_Domain_Model_Status_AddressStatus
+					Tx_Generic_Domain_Model_Status_ContactNumberStatus = Tx_Generic_Domain_Model_Status_ContactNumberStatus
+					Tx_Generic_Domain_Model_Status_ElectronicAddressIdentifierStatus = Tx_Generic_Domain_Model_Status_ElectronicAddressIdentifierStatus
+					Tx_Generic_Domain_Model_Type_AddressType = Tx_Generic_Domain_Model_Type_AddressType
+					Tx_Generic_Domain_Model_Type_LocalityType = Tx_Generic_Domain_Model_Type_LocalityType
+					Tx_Generic_Domain_Model_Type_LocalityNameElementType = Tx_Generic_Domain_Model_Type_LocalityNameElementType
+					Tx_Generic_Domain_Model_Type_ThoroughfareType = Tx_Generic_Domain_Model_Type_ThoroughfareType
+					Tx_Generic_Domain_Model_Type_ThoroughfareNameElementType = Tx_Generic_Domain_Model_Type_ThoroughfareNameElementType
+					Tx_Generic_Domain_Model_Type_CommunicationMediaType = Tx_Generic_Domain_Model_Type_CommunicationMediaType
+					Tx_Generic_Domain_Model_Type_ElectronicAddressIdentifierType = Tx_Generic_Domain_Model_Type_ElectronicAddressIdentifierType
+					Tx_Generic_Domain_Model_Type_OrganizationNameElementType = Tx_Generic_Domain_Model_Type_OrganizationNameElementType
+					Tx_Generic_Domain_Model_Type_OrganizationNameType = Tx_Generic_Domain_Model_Type_OrganizationNameType
+					Tx_Generic_Domain_Model_Type_PersonNameType = Tx_Generic_Domain_Model_Type_PersonNameType
+					Tx_Generic_Domain_Model_Type_PersonNameElementType = Tx_Generic_Domain_Model_Type_PersonNameElementType
+					Tx_Generic_Domain_Model_Type_SubDivisionType = Tx_Generic_Domain_Model_Type_SubDivisionType
+					Tx_Generic_Domain_Model_Usage_AddressUsage = Tx_Generic_Domain_Model_Usage_AddressUsage
+					Tx_Generic_Domain_Model_Usage_ContactNumberUsage = Tx_Generic_Domain_Model_Usage_ContactNumberUsage
+					Tx_Generic_Domain_Model_Usage_ElectronicAddressIdentifierUsage = Tx_Generic_Domain_Model_Usage_ElectronicAddressIdentifierUsage
+				}
+			}
+			
+			Tx_Generic_Domain_Model_ContactNumber.mapping.columns {
+				tx_generic_usage.mapOnProperty = usage
+				tx_generic_label.mapOnProperty = label
+			}
+			Tx_Generic_Domain_Model_ElectronicAddressIdentifier.mapping.columns {
+				tx_generic_usage.mapOnProperty = usage
+				tx_generic_label.mapOnProperty = label
+			}
+
+			Tx_Generic_Domain_Model_Status.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Status_AddressStatus.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Status_ContactNumberStatus.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Status_ContactNumberStatus.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Status_ElectronicAddressIdentifierStatus.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_AddressType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_LocalityType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_LocalityNameElementType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_ThoroughfareType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_ThoroughfareNameElementType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_CommunicationMediaType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_ElectronicAddressIdentifierType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_OrganizationNameElementType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_OrganizationNameType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_PersonNameType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_PersonNameElementType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Type_SubDivisionType.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Usage.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Usage_AddressUsage.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Usage_ContactNumberUsage.mapping.tableName = tx_generic_domain_model_value
+			Tx_Generic_Domain_Model_Usage_ElectronicAddressIdentifierUsage.mapping.tableName = tx_generic_domain_model_value
+
+			Tx_Generic_Domain_Model_Status.mapping.recordType = Tx_Generic_Domain_Model_Status
+			Tx_Generic_Domain_Model_Status_AddressStatus.mapping.recordType = Tx_Generic_Domain_Model_Status_AddressStatus
+			Tx_Generic_Domain_Model_Status_ContactNumberStatus.mapping.recordType = Tx_Generic_Domain_Model_Status_ContactNumberStatus
+			Tx_Generic_Domain_Model_Status_ElectronicAddressIdentifierStatus.mapping.recordType = Tx_Generic_Domain_Model_Status_ElectronicAddressIdentifierStatus
+			Tx_Generic_Domain_Model_Type.mapping.recordType = Tx_Generic_Domain_Model_Type
+			Tx_Generic_Domain_Model_Type_AddressType.mapping.recordType = Tx_Generic_Domain_Model_Type_AddressType
+			Tx_Generic_Domain_Model_Type_LocalityType.mapping.recordType = Tx_Generic_Domain_Model_Type_LocalityType
+			Tx_Generic_Domain_Model_Type_LocalityNameElementType.mapping.recordType = Tx_Generic_Domain_Model_Type_LocalityNameElementType
+			Tx_Generic_Domain_Model_Type_ThoroughfareType.mapping.recordType = Tx_Generic_Domain_Model_Type_ThoroughfareType
+			Tx_Generic_Domain_Model_Type_ThoroughfareNameElementType.mapping.recordType = Tx_Generic_Domain_Model_Type_ThoroughfareNameElementType
+			Tx_Generic_Domain_Model_Type_CommunicationMediaType.mapping.recordType = Tx_Generic_Domain_Model_Type_CommunicationMediaType
+			Tx_Generic_Domain_Model_Type_ElectronicAddressIdentifierType.mapping.recordType = Tx_Generic_Domain_Model_Type_ElectronicAddressIdentifierType
+			Tx_Generic_Domain_Model_Type_OrganizationNameElementType.mapping.recordType = Tx_Generic_Domain_Model_Type_OrganizationNameElementType
+			Tx_Generic_Domain_Model_Type_OrganizationNameType.mapping.recordType = Tx_Generic_Domain_Model_Type_OrganizationNameType
+			Tx_Generic_Domain_Model_Type_PersonNameType.mapping.recordType = Tx_Generic_Domain_Model_Type_PersonNameType
+			Tx_Generic_Domain_Model_Type_PersonNameElementType.mapping.recordType = Tx_Generic_Domain_Model_Type_PersonNameElementType
+			Tx_Generic_Domain_Model_Type_SubDivisionType.mapping.recordType = Tx_Generic_Domain_Model_Type_SubDivisionType
+			Tx_Generic_Domain_Model_Usage.mapping.recordType = Tx_Generic_Domain_Model_Usage
+			Tx_Generic_Domain_Model_Usage_AddressUsage.mapping.recordType = Tx_Generic_Domain_Model_Usage_AddressUsage
+			Tx_Generic_Domain_Model_Usage_ContactNumberUsage.mapping.recordType = Tx_Generic_Domain_Model_Usage_ContactNumberUsage
+			Tx_Generic_Domain_Model_Usage_ElectronicAddressIdentifierUsage.mapping.recordType = Tx_Generic_Domain_Model_Usage_ElectronicAddressIdentifierUsage
+		}
+	}
+}

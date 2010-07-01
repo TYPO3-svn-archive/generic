@@ -1,0 +1,7 @@
+{namespace g=Tx_Generic_ViewHelpers}
+
+<f:section name="default">
+	<f:for each="{content}" as="item">
+	{item->g:format.content(as: 'Object')}
+	</f:for>
+</f:section>

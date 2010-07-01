@@ -1,0 +1,9 @@
+{namespace g=Tx_Generic_ViewHelpers}
+
+<f:section name="default">
+<ul>
+	<f:for each="{content}" as="item">
+	{item->g:format.content(as: 'Content/List/Item', paths: paths)}
+	</f:for>
+</ul>
+</f:section>

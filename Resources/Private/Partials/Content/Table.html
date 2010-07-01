@@ -1,0 +1,9 @@
+{namespace g=Tx_Generic_ViewHelpers}
+
+<f:section name="default">
+<table border="2" cellspacing="5" cellpadding="5">
+	<f:for each="{content}" as="row">
+	{row->g:format.content(as: 'Content/Table/Row', paths: paths)}
+	</f:for>
+</table>
+</f:section>
